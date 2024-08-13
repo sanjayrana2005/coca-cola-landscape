@@ -55,6 +55,9 @@ body {
     gap: 5px;
     cursor: pointer;
 }
+#nav h1 > i{
+    display: none;
+}
 
 #nav>i {
     font-size: 16px;
@@ -222,11 +225,10 @@ body {
 .nav-part2-sidebar{
     background-color: red;
     position: absolute;
-    width: 40%;
+    width: 150px;
     height: 100vh;
     top: 0;
-    left: 0;
-    padding: 15% 5%;
+    padding: 65px 15px;
     z-index: 999;
     position: fixed;
     left: -150px;
@@ -242,6 +244,7 @@ body {
     position: absolute;
     top: 15px;
     right: 20px;
+    cursor: pointer;
 }
 
 
@@ -249,6 +252,10 @@ body {
 
     #nav{
         padding: 0 7%;
+    }
+
+    #nav h1 > i{
+        display: block;
     }
     
     #nav-part2{
@@ -286,8 +293,6 @@ body {
         right:0%;
     }
     .sidebar{
-        display: block;
-        position: absolute;
-        left: 0px;
+        left: 0;
     }
 }
