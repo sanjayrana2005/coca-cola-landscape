@@ -236,6 +236,10 @@ body {
         padding: 5% 20%;
         background-color: black;
     }
+    #left>h1 {
+        font-size: 45px;
+        line-height: 45px;
+    }
     #content > img {
         position: absolute;
         top: 100%;
