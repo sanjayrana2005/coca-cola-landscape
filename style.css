@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+#nav-part2 {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2>h5 {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#line {
+    width: 60px;
+    height: 1.6px;
+    background-color: red;
+}
+
+#nav>h1 {
+    font-size: 18px;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#nav>i {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#content {
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#left {
+    width: 38%;
+    height: 100%;
+    background-color: #000;
+    padding: 100px 70px;
+}
+
+#center {
+    width: 24%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top: 35px;
+    position: relative;
+}
+
+#right {
+    width: 38%;
+    height: 100%;
+    background-color: #000;
+    padding: 15% 7%;
+}
+
+#left>h1 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 700;
+}
+
+#left h1>span {
+    color: red;
+    font-weight: 400;
+    
+}
+
+#left>p {
+    font-size: 18px;
+    line-height: 22px;
+    width: 90%;
+    margin-top: 50px;
+}
+
+#left>button {
+    background-color: red;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    position: relative;
+}
+
+#left>button::after {
+    content: url('./assests/heart-line.svg');
+    width: 25px;
+    color: red;
+    position: absolute;
+    right: -40px;
+    top: 11px;
+}
+
+#center-bg {
+    width: 100%;
+    height: 93%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-KIa93aJfSEU4iOz0B3ky7cia6_L41iRrhQ&s);
+    background-size: 400%;
+    background-position: 30% 45%;
+    filter: blur(2px);
+}
+
+#center-bg-btn {
+    width: 140px;
+    height: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 110px;
+    right: -95px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#center-bg-btn-content>h4 {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+#center-bg-btn-content>p {
+    font-size: 12px;
+    color: pink;
+    font-weight: 400;
+    text-align: left;
+}
+
+#content>img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99;
+}
+
+#right-elems {
+    width: 95%;
+}
+
+#elem1 {
+    border-bottom: 1px solid #fff;
+}
+
+#elem1>h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+#elem1{
+    cursor: pointer;
+}
+
+#elem2>h1 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+#elem2>p {
+    font-size: 15px;
+    width: 90%;
+    opacity: 0.5;
+}
+
+
+@media   (max-width:900px){
+    
+    #nav-part2{
+        display: none;
+    }
+
+    #content {
+        display: block;
+    }
+    #left, #center, #right{
+        width: 100%;
+    }
+    #center{
+        padding: 5% 20%;
+        background-color: black;
+    }
+    #content > img {
+        position: absolute;
+        top: 100%;
+    }
+
+    #center-bg{
+        height: 95%;
+    }
+
+    #center-bg-btn {
+        position: absolute;
+        right:0%;
+    }
+}
